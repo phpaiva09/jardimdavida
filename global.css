@@ -1,0 +1,164 @@
+body {
+    background-color: #fefae0;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: rgb(54, 110, 59);
+    padding: 1px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h1 {
+    margin-top: 2rem;
+    font-size: 35px;
+    font-weight: 100;
+    color: #fefae0;
+}
+
+.navbar h3 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+
+li:hover {
+    transform: translateY(-3px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fefae0;
+}
+
+.container-principal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 7rem;
+}
+
+.container-right {
+    background: linear-gradient(
+        to right,
+        #fefae0 0%,          /* cor do fundo do lado do texto */
+        rgba(254,250,224,0.7) 20%,
+        rgba(254,250,224,0.3) 35%,
+        rgba(254,250,224,0) 55%
+    ),
+    url("image/horta.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 40%;
+    min-height: 400px;
+}
+
+.container-right-local {
+    background: linear-gradient(
+        to left,
+        #fefae0 0%,          /* cor do fundo do lado do texto */
+        rgba(254,250,224,0.7) 20%,
+        rgba(254,250,224,0.3) 35%,
+        rgba(254,250,224,0) 55%
+    ),
+    url("image/asilo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 40%;
+    min-height: 400px;
+}
+
+.container-left h1 {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.container-left p {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.container-left {
+    padding-left: 2rem;
+    padding-top: 100px;
+    width: 50%;
+    align-items: center;
+}
+
+.container-left-local h1 {
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.container-left-local p {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.container-left-local {
+    padding-left: 2rem;
+    padding-top: 30px;
+    width: 50%;
+    align-items: center;
+}
+
+.balao-informativo {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin: 50px auto;
+    color: rgb(0, 0, 0);
+    margin-bottom: 7rem;
+}
+
+.balao1, .balao2, .balao3 {
+    font-weight: 100;
+    border: rgb(0, 0, 0) solid 1px;
+    border-radius: 20px;
+    padding: 1rem;
+    text-align: center;
+    min-height: 200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.balao1, .balao2, .balao3 p {
+    font-size: 17px;
+}
+
+.balao1 h1, .balao2 h1, .balao3 h1 {
+    font-weight: 100;
+}
+
+footer {
+    background-color: rgb(54, 110, 59);
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    color: #fefae0;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Ao clicar no compre já a rolagem é lenta */
+}
