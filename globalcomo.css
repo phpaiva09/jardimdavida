@@ -42,10 +42,14 @@ ul {
     gap: 40px;
 }
 
-li:hover {
-    transform: translateY(-3px);
+li {
     transition: all 0.2s;
     font-weight: bold;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translateY(-3px);
 }
 
 a {
@@ -61,28 +65,35 @@ a {
     color: rgb(54, 110, 59);
     background-color: rgba(255, 255, 255, 0.25);
     line-height: 1.6;
+    font-size: 18px;
 }
 
-.title {
+.lista-texto {
+    display: block;
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+
+.lista-texto li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+h1 {
     font-weight: 500;
-    font-size: 38px;
-    margin-bottom: 2rem;
-    color: rgb(54, 110, 59);
 }
 
-main h1 {
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 2rem;
-    color: rgb(54, 110, 59);
+h2 {
+    font-weight: 400;
 }
 
-main p {
-    font-size: 19px;
-    line-height: 1.7;
-    margin-bottom: 1.4rem;
-    color: #2f4f2f;
-    max-width: 95%;
+h3 {
+    font-weight: 400;
+}
+
+li {
+    font-weight: 400;
 }
 
 footer {
