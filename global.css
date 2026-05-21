@@ -12,18 +12,18 @@ body {
     margin: auto;
     background-color: rgb(54, 110, 59);
     padding: 1px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar h1 {
     margin-top: 2rem;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 100;
     color: #fefae0;
 }
 
 .navbar h3 {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 100;
 }
 
@@ -68,7 +68,7 @@ a {
         rgba(254,250,224,0.3) 35%,
         rgba(254,250,224,0) 55%
     ),
-    url("image/horta.avif");
+    url("image/horta.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -110,6 +110,7 @@ a {
     padding-top: 100px;
     width: 50%;
     align-items: center;
+    color: rgb(54, 110, 59);
 }
 
 .container-left-local h1 {
@@ -127,6 +128,7 @@ a {
     padding-top: 30px;
     width: 50%;
     align-items: center;
+    color: rgb(54, 110, 59);;
 }
 
 .balao-informativo {
@@ -140,12 +142,13 @@ a {
 
 .balao1, .balao2, .balao3 {
     font-weight: 100;
-    border: rgb(0, 0, 0) solid 1px;
     border-radius: 20px;
     padding: 1rem;
     text-align: center;
     min-height: 200px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(54, 110, 59);
+    cursor: pointer;
 }
 
 .balao1, .balao2, .balao3 p {
@@ -154,6 +157,12 @@ a {
 
 .balao1 h1, .balao2 h1, .balao3 h1 {
     font-weight: 100;
+    font-size: 30px;
+}
+
+.balao1:hover, .balao2:hover, .balao3:hover {
+    transform: translateY(-5px);
+     transition: all 0.2s;
 }
 
 footer {
